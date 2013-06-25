@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Data Source" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="deed61b4-9c01-430d-91c5-e9996cfc67e5">
+    <synchronize>true</synchronize>
+    <jdbc-driver>sun.jdbc.odbc.JdbcOdbcDriver</jdbc-driver>
+    <jdbc-url>jdbc:odbc:&lt;data-source-name>[;&lt;attribute-name>=&lt;attribute-value>]*</jdbc-url>
+    <libraries />
+  </data-source>
+</component>

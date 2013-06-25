@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+    <bean id="helloBean1" class="com.qsoft.common.HelloWorld" scope="singleton">
+    </bean>
+    <!--Singleton là default scope trong Spring. property của đối tượng chỉ đc khởi tạo với 1 bộ giá trị và tất cả mọi đối tượng khác cùng sử dụng chung property đó cho đến khi chương trình kết thúc -->
+
+    <bean id="helloBean2" class="com.qsoft.common.HelloWorld" scope="prototype">
+    </bean>
+    <!--prototype là scope mà khi khởi tạo một đối tượng mới thì giá trị của nó cũng bị reset luôn - như 2 đối tượng riêng biệt. -->
+
+    <bean id="helloBean3" class="com.qsoft.common.HelloWorld" scope="bundle">
+    </bean>
+
+    <!--Bộ 3 request, session và globalSession chỉ sử dụng cho WEB applications-->
+    <bean id="helloBean4" class="com.qsoft.common.HelloWorld" scope="globalSession">
+    </bean>
+
+    <bean id="helloBean5" class="com.qsoft.common.HelloWorld" scope="request">
+    </bean>
+
+    <bean id="helloBean6" class="com.qsoft.common.HelloWorld" scope="session">
+    </bean>
+
+
+
+</beans>
