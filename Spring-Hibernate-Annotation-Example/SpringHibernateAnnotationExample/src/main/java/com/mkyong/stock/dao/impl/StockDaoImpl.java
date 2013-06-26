@@ -24,8 +24,9 @@ public class StockDaoImpl extends CustomHibernateDaoSupport implements StockDao{
 	}
 	
 	public Stock findByStockCode(String stockCode){
-		List list = getHibernateTemplate().find("from Stock where stockCode=?",stockCode);
-		return (Stock)list.get(0);
+//		List list = getHibernateTemplate().find("from Stock where stockCode=?",stockCode);
+//		return (Stock)list.get(0);
+        return new Stock("abc","123");
 	}
 
 }

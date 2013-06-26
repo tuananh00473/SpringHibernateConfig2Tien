@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Data Source" product="PostgreSQL" version="9.2.4" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.0 JDBC4 (build 801)" uuid="cf581fef-5d57-4881-a6f1-344926cb595c">
+    <identifier-quote-string>&quot;</identifier-quote-string>
+    <synchronize>true</synchronize>
+    <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+    <jdbc-url>jdbc:postgresql://localhost:5432/technicalkeeda</jdbc-url>
+    <user-name>postgres</user-name>
+    <user-password>df9bdf98df99df9edf9fdf9c</user-password>
+    <schema-pattern>technicalkeeda.public</schema-pattern>
+    <default-schemas>technicalkeeda.public</default-schemas>
+    <libraries>
+      <library>
+        <url>jar://$MAVEN_REPOSITORY$/postgresql/postgresql/9.1-901.jdbc4/postgresql-9.1-901.jdbc4.jar!/</url>
+      </library>
+    </libraries>
+    <schema name="public" catalog="technicalkeeda"/>
+    <table name="hibernate_sequence" schema="public" catalog="technicalkeeda" type="SEQUENCE">
+      <column name="sequence_name" sqlType="name" length="2147483647" precision="0" nullable="false" jdbcType="12"/>
+      <column name="last_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="start_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="increment_by" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="max_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="min_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="cache_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="log_cnt" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="is_cycled" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="is_called" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+    </table>
+    <table name="trn_movies" schema="public" catalog="technicalkeeda" type="TABLE">
+      <column name="movie_id" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="director" sqlType="varchar" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="release_year" sqlType="int8" length="19" precision="0" nullable="true" jdbcType="-5"/>
+      <column name="title" sqlType="varchar" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="trn_movies_pkey" columns="movie_id"/>
+    </table>
+  </data-source>
+</component>

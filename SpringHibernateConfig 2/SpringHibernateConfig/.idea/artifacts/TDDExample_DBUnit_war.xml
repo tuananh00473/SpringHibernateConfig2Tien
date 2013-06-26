@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="TDDExample_DBUnit:war">
+    <output-path>$USER_HOME$/Downloads/DBUnitSamplePlusHibernateAndSpring_Casper-master/target</output-path>
+    <root id="archive" name="TDDExample_DBUnit.war">
+      <element id="artifact" artifact-name="TDDExample_DBUnit:war exploded" />
+    </root>
+  </artifact>
+</component>

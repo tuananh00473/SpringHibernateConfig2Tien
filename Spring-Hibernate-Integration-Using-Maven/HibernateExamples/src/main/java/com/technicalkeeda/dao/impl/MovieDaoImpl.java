@@ -1,22 +1,29 @@
 package com.technicalkeeda.dao.impl;
 
+import com.technicalkeeda.entity.TrnMovies;
 import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate3.HibernateTemplate;
 
 import com.technicalkeeda.dao.MovieDao;
-import com.technicalkeeda.entities.Movie;
+
+import javax.persistence.EntityManager;
 
 public class MovieDaoImpl implements MovieDao {
 
-	private HibernateTemplate hibernateTemplate;
+    @Autowired
+    private EntityManager entityManager;
 
-	public void setSessionFactory(SessionFactory sessionFactory) {
-		this.hibernateTemplate = new HibernateTemplate(sessionFactory);
-	}
+//	private HibernateTemplate hibernateTemplate;
 
-	@Override
-	public void createMovie(Movie movie) {
-		hibernateTemplate.saveOrUpdate(movie);
-	}
+//	public void setSessionFactory(SessionFactory sessionFactory) {
+//		this.hibernateTemplate = new HibernateTemplate(sessionFactory);
+//	}
 
+    @Override
+    public void createMovie(TrnMovies trnMovies)
+    {
+//        hibernateTemplate.saveOrUpdate(trnMovies);
+        entityManager.persist(trnMovies);
+    }
 }

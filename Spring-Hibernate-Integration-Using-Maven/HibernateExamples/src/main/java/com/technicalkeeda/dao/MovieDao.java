@@ -1,7 +1,8 @@
 package com.technicalkeeda.dao;
 
-import com.technicalkeeda.entities.Movie;
+
+import com.technicalkeeda.entity.TrnMovies;
 
 public interface MovieDao {
-	public void createMovie(Movie movie);
+	public void createMovie(TrnMovies trnMovies);
 }
